@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Bricolage Grotesque', sans-serif;
+  --font-display: 'Bricolage Grotesque', sans-serif;
+  --font-body: 'Manrope', sans-serif;
+  --font-mono: 'Space Grotesk', monospace;
+
+  --color-brandDark: #07101E;
+  --color-brandDeep: #050B14;
+  --color-brandCard: #0B1728;
+  --color-brandSurface: #0E1B30;
+  --color-brandRed: #E5192D;
+  --color-brandRedHover: #FF283C;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+body {
+  background-color: #07101E;
+  color: #E2E8F0;
+  overflow-x: hidden;
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+/* Red accent frame box style from deck */
+.red-offset-frame {
+  position: relative;
+}
+.red-offset-frame::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 44px;
+  height: 44px;
+  border-top: 3px solid #E5192D;
+  border-left: 3px solid #E5192D;
+  pointer-events: none;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 10;
+}
+.red-offset-frame::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  width: 44px;
+  height: 44px;
+  border-bottom: 3px solid #E5192D;
+  border-right: 3px solid #E5192D;
+  pointer-events: none;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 10;
+}
+.red-offset-frame:hover::before,
+.red-offset-frame:hover::after {
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  border-color: #FF283C;
+}
+
+/* Active scrollspy item */
+.nav-link.active {
+  color: #E5192D !important;
+  font-weight: 700;
+}
+.nav-link.active .nav-indicator {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+}
+
+/* Laurel wreath SVG animation */
+.laurel-card:hover svg {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 18px rgba(229, 25, 45, 0.55));
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050B14;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E5192D;
+}
+
+/* Lightbox image fade-in on slide change */
+@keyframes lb-fade {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+.lb-fade { animation: lb-fade 0.25s ease-out; }
