@@ -6,7 +6,7 @@
 
 Website for Rollin Realms, an independent & commercial film and media production house in Dhaka, Bangladesh.
 
-[![Live Site](https://img.shields.io/badge/LIVE-rollin--realms--website.vercel.app-E5192D?style=for-the-badge)](https://rollin-realms-website.vercel.app)
+[![Live Site](https://img.shields.io/badge/LIVE-rollinrealms.vercel.app-E5192D?style=for-the-badge)](https://rollinrealms.vercel.app)
 
 ![React](https://img.shields.io/badge/React_19-07101E?style=flat-square&logo=react&logoColor=E5192D)
 ![TypeScript](https://img.shields.io/badge/TypeScript-07101E?style=flat-square&logo=typescript&logoColor=E5192D)
