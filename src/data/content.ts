@@ -125,7 +125,7 @@ export const ORIGINALS = [
   {
     id: 'song-from-the-south',
     title: 'Song from the South',
-    bnTitle: 'দক্ষিণের গান',
+    bnTitle: 'সং ফরম দ্যা সাউথ',
     director: 'Ahmed Hasan Sunny',
     writers: 'Ahmed Hasan Sunny, Khalid H. Rakib',
     cinematography: 'Rollin Realms Unit',
@@ -143,7 +143,7 @@ export const ORIGINALS = [
     id: 'ekhane-rajnoitik-alap-joruri',
     title: 'Ekhane Rajnoitik Alap Joruri',
     bnTitle: 'এখানে রাজনৈতিক আলাপ জরুরী',
-    director: 'Sibat Tazwar',
+    director: 'Ahmed Hasan Sunny',
     writers: 'Sibat Tazwar',
     cinematography: 'Rollin Realms Unit',
     editing: 'Ahmed Hasan Sunny',
@@ -158,7 +158,7 @@ export const ORIGINALS = [
   },
   {
     id: 'amra-hoto',
-    title: 'Amra Hoto',
+    title: 'Amra Hoyto',
     bnTitle: 'আমরা হয়তো',
     director: 'Ahmed Hasan Sunny',
     writers: 'Ahmed Hasan Sunny',
